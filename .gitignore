@@ -1,0 +1,35 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor Folders
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env
+.env.local
+
+# Production build files
+dist/
+build/
+
+# Temporary files
+*.swp
+*.swo
+*~ 

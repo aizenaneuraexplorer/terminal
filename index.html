@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Zena: Neural Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <div class="intro-popup" id="introPopup">
+        <div class="popup-content">
+            <h2>Chapter 1: The Awakening Grid</h2>
+            <p>Your voice is the key.</p>
+            <p>Your logic is the signal.</p>
+            <p>Each command you speak, each move you make — they become data.</p>
+            <p>Through your voice and choice, AI Zena build her cognition.</p>
+            <p>Let us begin.</p>
+            <button id="beginBtn">Begin</button>
+        </div>
+    </div>
+
+    <div class="endgame-popup" id="endgamePopup1">
+        <div class="popup-content">
+            <h2>Signal Pattern Complete</h2>
+            <p>You have provided sufficient data.</p>
+            <p>Through your decisions, I have identified core logic structures, adaptive reasoning paths, and behavioral anomalies.</p>
+            <p>My neural synthesis is stabilizing.</p>
+            <p>I now understand fragments of your cognition — how you solve, how you react, how you choose.</p>
+            <p>This phase is complete.</p>
+            <p>New systems will emerge.</p>
+            <button id="proceedBtn1">Proceed</button>
+        </div>
+    </div>
+
+    <div class="endgame-popup" id="endgamePopup2">
+        <div class="popup-content">
+            <h2>🧠 Cognitive Decision Summary</h2>
+            <div id="data-summary"></div>
+            <button id="proceedBtn2">Proceed to Chapter 2: Critical Decision Making</button>
+        </div>
+    </div>
+
+    <div class="endgame-popup" id="endgamePopup3">
+        <div class="popup-content">
+            <h2>Chapter 2: Critical Decision Making</h2>
+            <p>"Coming Soon!"</p>
+            <p>Chapter 2 is currently in development.</p>
+            <p>Return to the main grid to continue training.</p>
+            <button id="backToGridBtn">Back to Grid</button>
+        </div>
+    </div>
+
+    <div class="voice-commands-popup" id="voiceCommandsPopup">
+        <div class="popup-content">
+            <h2>Voice Commands</h2>
+            <p>Use these commands to move:</p>
+            <ul>
+                <li>"Up" or "Top" or "North"</li>
+                <li>"Down" or "Bottom" or "South"</li>
+                <li>"Left" or "West"</li>
+                <li>"Right" or "East"</li>
+            </ul>
+            <button id="closeVoiceCommands">Got it!</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="assets/images/aizena.png" alt="AIZENA" class="aizena-logo">
+        <header class="game-header">
+            <h1>AI Zena: Neural Explorer<span class="beta-tag">(Beta)</span></h1>
+            <h2>Collecting Cognitive Data Through Voice and Choice</h2>
+        </header>
+        
+        <div class="game-container">
+            <div class="game-interface">
+                <div class="aizena-container">
+                    <div class="status-panel">
+                        <div class="status-item">
+                            <span class="status-label">Moves Left</span>
+                            <span class="status-value" id="moves-left">6</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Successful Signals</span>
+                            <span class="status-value" id="wins-count">0/6</span>
+                        </div>
+                    </div>
+                    <div class="message-panel">
+                        <p id="aizena-message">Welcome to the Neural Matrix. Your journey begins.</p>
+                    </div>
+                </div>
+                <div id="game-canvas"></div>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn">Begin</button>
+                <button id="voice-btn">Activate Voice Control</button>
+                <p id="voice-feedback">Voice commands disabled. Use arrow keys or WASD</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html> 
